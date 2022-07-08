@@ -6,7 +6,7 @@ using System.Data.Entity;
 using MySql.Data.EntityFramework;
 using ORMFrameWork.Models;
 
-
+//This is a comment
 namespace ORMFrameWork.DAL
 {
     [DbConfigurationType(typeof(MySqlEFConfiguration))]
