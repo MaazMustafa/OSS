@@ -33,6 +33,7 @@ namespance Banking
     {
         public int EmployeeId { get; set; }
         public string EmployeeNazme { get; set; }
+        public string SME { get;set }
 
     }
 
