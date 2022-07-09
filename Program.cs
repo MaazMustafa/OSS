@@ -29,5 +29,11 @@ namespance Banking
         Console.WriteLine("Online Shopping Application Portal");
         }
     }
+    public class Employee
+    {
+        public int EmployeeId { get; set; }
+        public string EmployeeNazme { get; set; }
+
+    }
 
 }
