@@ -8,5 +8,7 @@ namespace CRM
         public string FullName { get; set; }
         public string ContactNo { get; set; }
         public string DeliveryAddress { get; set; }
+        public string Location { get; set; }
+        public string Interest { get; set; }
     }
 }
