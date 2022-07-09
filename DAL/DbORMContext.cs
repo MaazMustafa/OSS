@@ -1,13 +1,12 @@
 ﻿using System;
-
 using System.Linq;
 using System.Web;
 using System.Data.Entity;
 using MySql.Data.EntityFramework;
 using MySql.Data.MySqlClient;
-
-
 //This is a comment
+//This is containing code of ORM code
+
 //ORM DB Context class need to be added with Departments DB Set As well
 namespace ORMFrameWork.DAL
 {
