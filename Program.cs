@@ -3,18 +3,42 @@ using System.Collection.Generics;
 
 namespance Banking
 {
+    public delegate void AccountOperation();
+
     public class Account{
+
+        public event AccountOperation overBalance;
+        public event AccountOperation underBalance;
+
         public double Balance {get;set;}
         public Account(double amount){
             this.Balance=amount;
+            if(this.Balance <=5000){
+                underBalance();
+            }
+            else if(this.Balance>=250000){
+                overBalance();
+            }
         }
         public void Deposit(double amount){
             this.Balance+=amount;
+             if(this.Balance <=5000){
+                underBalance();
+            }
+            else if(this.Balance>=250000){
+                overBalance();
+            }
 
         }
 
             public void Withdrraw(double amount){
             this.Balance-=amount;
+             if(this.Balance <=5000){
+                underBalance();
+            }
+            else if(this.Balance>=250000){
+                overBalance();
+            }
         
         }
     }
